@@ -1,0 +1,9 @@
+Flask==3.0.3
+google-generativeai
+grpcio
+grpcio-status
+mediapipe
+protobuf
+python-dotenv
+requests
+# ... and all other dependencies will be listed here
