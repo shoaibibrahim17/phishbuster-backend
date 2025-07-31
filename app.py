@@ -26,10 +26,12 @@ def check_url():
 
     result_sb = check_url_safebrowsing(url)
     result_vt = check_url_virustotal(url)
+    gemini_suggestions = suggest_alternatives(url)
 
     combined_result = {
         "safe_browsing": result_sb,
-        "virus_total": result_vt
+        "virus_total": result_vt,
+        "safe_alternative_suggestions": gemini_suggestions
     }
 
     return jsonify(combined_result)
